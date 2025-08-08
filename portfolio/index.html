@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Include FontAwesome -->
+    </head>
+<body>
+<div class="img">
+    <div class="container">
+        <nav>
+            <h1>Shashank Rajput</h1>
+            <ul>
+                <li><a href="#img">Home</a></li>
+                <li><a href="#me">About Me</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hey!!<br> I'm <span>Shashank Rajput</span><br> Belongs From Bareilly</h1>
+        </div>
+    </div>
+</div>
+<div class="about" id="me">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="WhatsApp Image 2025-03-04 at 3.25.47 PM.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub">About Me</h1>
+                <p>“Hi! I’m Shashank Rajput, a passionate web developer based.I specialize in creating visually stunning websites that are not only user-friendly but also optimized for performance.I’m passionate about building intuitive digital experiences that leave a lasting impression on users. I love turning ideas into functional, beautiful websites that meet both the client's and users’ needs.”
+
+                    Feel free to explore my portfolio and get in touch if you’re interested in working together. I’d love to help bring your next project to life!                    ”</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML<br>CSS</li>
+                        <li><span>Database</span><br>MySQL</li>
+                        <li><span>Programming Languages</span><br>Python<br>HTML<br>Familiar with C</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Certifications</span><br>Python 101 for Data Science by IBM<br>Crafting Meaningful HTML by Linkedin Learning</li>
+                        <li><span>Internship</span><br>Online by Codsoft</li>
+        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Invertis University</span><br>BCA<br>2023-2026</li>
+                        <li><span>Madhavrao Scindia Public School</span><br>2022-2023<br>12th</li>
+                        <li><span>Madhavrao Scindia Public School</span><br>2020-2021<br>10th</li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Screenshot (5).png" alt="Amazon Clone">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">
+                        Contact ME
+                </h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajputshashank991@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7453055958</p>
+                <div class="social-icons">
+                    
+                    <a href="https://www.linkedin.com/in/shashank-rajput-29a937292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/official_shashank_rajput92/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Shaskank.<i class="fa-solid fa-heart"></i> Made with lots of Struggle</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event){
+        // Remove active classes from all tab links and contents
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        // Add active class to the clicked tab link and corresponding tab content
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
